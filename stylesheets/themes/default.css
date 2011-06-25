@@ -1,0 +1,36 @@
+/* button text format and style */
+.btn { text-shadow: 1px 1px 0px #FFF; color: #666666; }
+
+/* hovered color */
+.btn:hover, .btn_h, .btn_pos_h, .btn_neg_h { color: #FFF; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3); }
+
+/* button border style */
+.btn, .btn_group { border-color: #999999; }
+
+.btn:hover, .btn_h, .btn_h:hover { border-color: #388AD4; }
+
+.btn_pos:hover, .btn_pos_h, .btn_pos_h:hover { border-color: #496A19; }
+
+.btn_neg:hover, .btn_neg_h, .btn_neg_h:hover { border-color: #6A2819; }
+
+.btn_group .btn, .btn_group .btn:hover, .btn_group .btn_h, .btn_group .btn_h:hover, .btn_group .btn_pos:hover, .btn_group .btn_pos_h, .btn_group .btn_pos_h:hover, .btn_group .btn_neg:hover, .btn_group .btn_neg_h, .btn_group .btn_neg_h:hover { border-left-color: #999999; }
+
+/* button backgrounds */
+.btn, .btn_h { background: #e7e7e7; /* Old browsers */ background: -moz-linear-gradient(top, #e7e7e7 0%, #cccccc 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e7e7e7), color-stop(100%, #cccccc)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #e7e7e7 0%, #cccccc 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #e7e7e7 0%, #cccccc 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #e7e7e7 0%, #cccccc 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e7e7', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #e7e7e7 0%, #cccccc 100%); /* W3C */ }
+
+.btn:hover, .btn_selected, .btn_h, .btn_h:hover { background: #75a9e2; /* Old browsers */ background: -moz-linear-gradient(top, #75a9e2 0%, #388ad4 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #75a9e2), color-stop(100%, #388ad4)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #75a9e2 0%, #388ad4 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #75a9e2 0%, #388ad4 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #75a9e2 0%, #388ad4 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75a9e2', endColorstr='#388ad4',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #75a9e2 0%, #388ad4 100%); /* W3C */ }
+
+.btn:active, .btn_h:active { background: #388ad4; /* Old browsers */ background: -moz-linear-gradient(top, #388ad4 0%, #75a9e2 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #388ad4), color-stop(100%, #75a9e2)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #388ad4 0%, #75a9e2 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #388ad4 0%, #75a9e2 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #388ad4 0%, #75a9e2 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#388ad4', endColorstr='#75a9e2',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #388ad4 0%, #75a9e2 100%); /* W3C */ }
+
+.btn_pos:hover, .btn_pos_h, .btn_pos_h:hover { background: #acda6b; /* Old browsers */ background: -moz-linear-gradient(top, #acda6b 0%, #7fb82d 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #acda6b), color-stop(100%, #7fb82d)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #acda6b 0%, #7fb82d 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #acda6b 0%, #7fb82d 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #acda6b 0%, #7fb82d 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#acda6b', endColorstr='#7fb82d',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #acda6b 0%, #7fb82d 100%); /* W3C */ }
+
+.btn_pos:active, .btn_pos_h:active { background: #7fb82d; /* Old browsers */ background: -moz-linear-gradient(top, #7fb82d 0%, #acda6b 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fb82d), color-stop(100%, #acda6b)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #7fb82d 0%, #acda6b 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #7fb82d 0%, #acda6b 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #7fb82d 0%, #acda6b 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7fb82d', endColorstr='#acda6b',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #7fb82d 0%, #acda6b 100%); /* W3C */ }
+
+.btn_neg:hover, .btn_neg_h, .btn_neg_h:hover { background: #da806b; /* Old browsers */ background: -moz-linear-gradient(top, #da806b 0%, #b8472d 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #da806b), color-stop(100%, #b8472d)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #da806b 0%, #b8472d 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #da806b 0%, #b8472d 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #da806b 0%, #b8472d 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#da806b', endColorstr='#b8472d',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #da806b 0%, #b8472d 100%); /* W3C */ }
+
+.btn_neg:active, .btn_neg_h:active { background: #b8472d; /* Old browsers */ background: -moz-linear-gradient(top, #b8472d 0%, #da806b 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b8472d), color-stop(100%, #da806b)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #b8472d 0%, #da806b 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #b8472d 0%, #da806b 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, #b8472d 0%, #da806b 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8472d', endColorstr='#da806b',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #b8472d 0%, #da806b 100%); /* W3C */ }
+
+/* icons */
+.i-edit { background-image: url("../images/icons/picons1/12/basic1-018.png"); }
+
+.i-new { background-image: url("../images/icons/picons1/12/basic1-006.png"); }
