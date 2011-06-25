@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, Helvetica;
+  font-size: 16px;
+  color: #EEE;
+  background:#333;
+}
+
+p,
+nav {
+  margin:0 0 3em;
+}
+
+.wrapper {
+  max-width:1100px;
+  min-width:300px;
+  margin:0 auto;
+}
+
+
+
+a {
+  color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', arial, serif;
+  color:#FFF;
+  text-shadow: 1px 1px 0px #000;
+  font-weight:normal;
+  border-bottom:1px solid #444;
+  margin:1.3em 0 .8em;
+}
+
+
+/* ========== */
+/* = header = */
+/* ========== */
+.header {
+  padding-top:30px;
+  padding-bottom:20px;
+}
+
+.header .logo {
+  text-decoration:none;
+  color:#FFF;
+  display:block;
+}
+
+.header .logo span{
+  display:block;
+  font-size:11px;
+  text-shadow:1px 1px 0 #000;
+  opacity:.4;
+}
