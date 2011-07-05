@@ -4,6 +4,8 @@
 /* ================ */
 a, button, textarea { outline: none; }
 
+button { overflow: visible; }
+
 img { border: none; }
 
 button, input, select, textarea { margin: 0; font-family: inherit; }
@@ -19,13 +21,13 @@ label { cursor: pointer; }
 .fsxxl{font-size:  18px}
 .fwn{font-weight: normal}
 .fwb{font-weight: bold}*/
-/* ================ */
-/* = INLINE-BLOCK = */
-/* ================ */
+/* ============================ */
+/* = INLINE-BLOCK AND RELATED = */
+/* ============================ */
 /* inline-block wrap - prevent whitespace spacing in FF */
 .btn_wrap, .btn_group { letter-spacing: -0.25em; white-space: nowrap; }
 
-.line { letter-spacing: -0.279em; }
+.line { letter-spacing: -0.279em; *letter-spacing: 10px; }
 
 /* this is because letter-spacing breaks justify in some cases*/
 .grid { word-spacing: -0.279em; }
@@ -34,13 +36,13 @@ label { cursor: pointer; }
 .btn, .i, .unit, .unit_txt, legend { letter-spacing: normal; word-spacing: normal; }
 
 /* inline-block */
-.btn, .btn_wrap, .btn_group, .i, .unit, .unit_txt, .item { display: -moz-inline-stack; display: inline-block; vertical-align: middle; zoom: 1; /*    *vertical-align: auto;*/ *display: inline; -ms-box-sizing: border-box; /*  -ms-box-sizing: content-box;*/ }
+.btn, .btn_wrap, .btn_group, .i, .unit, .unit_txt, .item, .dft_form label { display: -moz-inline-stack; display: inline-block; vertical-align: middle; zoom: 1; /*    *vertical-align: auto;*/ *display: inline; }
 
 /* ========= */
 /* = LAYOUT = */
 /* ========= */
 /* inspired in: https://github.com/stubbornella/oocss */
-.unit, .unit_txt { *margin-left: -0.04em; /* IE margin hack */ vertical-align: top; }
+.unit, .unit_txt { *margin-left: -0.02em; /* IE margin hack */ vertical-align: top; }
 
 .unit .unit, .unit_txt .unit_txt .unit .unit_txt, .unit_txt .unit { *margin-left: 0; }
 
@@ -218,11 +220,13 @@ label { cursor: pointer; }
 /* ========= */
 .dft_form, .dft_form fieldset { margin: 0; padding: 0; display: block; }
 
-.dft_form fieldset { border: 1px solid #444444; padding: 10px 0; }
+.dft_form fieldset { padding: 10px 0; border: 1px solid #444; }
 
-.field { border: 1px solid #666; background: #ffffff; /* Old browsers */ background: -moz-linear-gradient(top, white 0%, #f7f7f7 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f7f7f7)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, white 0%, #f7f7f7 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, white 0%, #f7f7f7 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, white 0%, #f7f7f7 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #ffffff 0%, #f7f7f7 100%); /* W3C */ display: block; line-height: normal; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 1px 1px 0 #CCC inset; -webkit-box-shadow: 1px 1px 0 #CCC inset; box-shadow: 1px 1px 0 #CCC inset; }
+.field { width: auto; overflow: visible; background: #ffffff; /* Old browsers */ background: -moz-linear-gradient(top, white 0%, #f7f7f7 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f7f7f7)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, white 0%, #f7f7f7 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, white 0%, #f7f7f7 100%); /* Opera11.10+ */ background: -ms-linear-gradient(top, white 0%, #f7f7f7 100%); /* IE10+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */ background: linear-gradient(top, #ffffff 0%, #f7f7f7 100%); /* W3C */ display: block; line-height: normal; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 1px 1px 0 #CCC inset; -webkit-box-shadow: 1px 1px 0 #CCC inset; box-shadow: 1px 1px 0 #CCC inset; }
 
-.field input, .field textarea { margin: 0; padding: .45em 0 .4em; width: 100%; border: none; -webkit-appearance: none; resize: none; color: #999; background: transparent; }
+.unit_txt .field { /*for IE6*/ _padding: 0!important; }
+
+.field input, .field textarea { margin-top: 0!important; margin-bottom: 0!important; padding: .45em 0 .4em; width: 100%; _width: 90%; /*for IE6*/ border: none; -webkit-appearance: none; resize: none; color: #999; border: 1px solid #FFF; }
 
 .field input:focus, .field textarea:focus { color: #333; }
 
@@ -230,7 +234,7 @@ label { cursor: pointer; }
 
 .field, .dft_form label { padding: 0 .5em; }
 
-.dft_form label { font-weight: bold; display: block; padding-bottom: .4em; text-shadow: 1px 1px 0px #000; }
+.dft_form label { font-weight: bold; padding-bottom: .4em; text-shadow: 1px 1px 0px #000; }
 
 /* button text format and style */
 .btn { text-shadow: 1px 1px 0px #FFF; color: #666666; }
